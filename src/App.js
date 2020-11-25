@@ -25,5 +25,7 @@ Fix Each child key // Switch to axios async
 Composant : no result found + img/gif
 Composants : gif / gif list (map) / no gif
 Catch Error with popup (react tostify)
-npm i styled reset + balise reset dans index.js avant App
+
+Style général ?
+
 */
