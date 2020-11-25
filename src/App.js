@@ -1,3 +1,5 @@
+import { Reset } from "styled-reset";
+
 import Header from "./components/Header";
 import GifList from "./components/GifList";
 import Footer from "./components/Footer";
@@ -5,6 +7,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div>
+      <Reset />
       <Header />
       <GifList />
       <Footer />

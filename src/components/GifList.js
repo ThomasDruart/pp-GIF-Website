@@ -38,5 +38,9 @@ export default function GifList() {
   };
   //console.log(gifs);
 
-  return <SDiv>{renderGif()}</SDiv>;
+  return (
+    <>
+      <SDiv>{renderGif()}</SDiv>
+    </>
+  );
 }
