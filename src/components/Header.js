@@ -1,11 +1,22 @@
 import React from "react";
 import styled from "styled-components";
+import ghost from "../images/ghost.png";
 
 const SHeader = styled.div`
   height: 10vh;
   background-color: #222b55;
   display: flex;
   justify-content: space-around;
+`;
+
+const SLogo = styled.div`
+  display: flex;
+`;
+
+const SImg = styled.img`
+  width: 3em;
+  height: 3em;
+  margin: auto 1em auto 0;
 `;
 
 const SH1 = styled.h1`
@@ -31,7 +42,10 @@ const SLi = styled.li`
 export default function Header() {
   return (
     <SHeader>
-      <SH1>GIF Your Life</SH1>
+      <SLogo>
+        <SImg src={ghost} alt="ghost" />
+        <SH1>GIF Your Life</SH1>
+      </SLogo>
       <SMenu>
         <SLi>Main</SLi>
         <SLi>Trending</SLi>
