@@ -25,17 +25,21 @@ export default function GifList() {
     fetchGif();
   }, []);
 
-  const fetchGif = () => {
-    axios
-      .get("https://api.giphy.com/v1/gifs/trending", {
-        params: {
-          api_key: "Khl0CRBp6qvnFcYuUjNsbk9aTw45Iv8r",
-          limit: 15,
-        },
-      })
-      .then(({ data }) => {
-        setGifs(data.data);
-      });
+  const fetchGif = async () => {
+    try {
+      const { data } = await axios.get(
+        "https://api.giphy.com/v1/gifs/trending",
+        {
+          params: {
+            api_key: "Khl0CRBp6qvnFcYuUjNsbk9aTw45Iv8r",
+            limit: 15,
+          },
+        }
+      );
+      setGifs(data.data);
+    } catch (error) {
+      return error;
+    }
   };
 
   const renderGif = () => {

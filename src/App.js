@@ -29,7 +29,7 @@ export default App;
 /*
 
 TO DO : 
-Fix Each child key // Switch to axios async
+Fix Each child key
 Search engine
 Composant : no result found + img/gif
 Composants : gif / gif list (map) / no gif
