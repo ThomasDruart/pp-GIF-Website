@@ -51,7 +51,7 @@ export default function Header() {
       <SMenu>
         <SLi to="/">Main</SLi>
         <SLi to="/trending">Trending</SLi>
-        <SLi>Gif Roulette</SLi>
+        <SLi to="/random">Gif Roulette</SLi>
       </SMenu>
     </SHeader>
   );
