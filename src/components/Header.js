@@ -50,7 +50,7 @@ export default function Header() {
     <SHeader>
       <SLogo to="/">
         <SImg src={ghost} alt="ghost" />
-        <SH1>GIF Your Life</SH1>
+        <SH1>Oh My GIF !</SH1>
       </SLogo>
       <SMenu>
         <SLi to="/">Main</SLi>
