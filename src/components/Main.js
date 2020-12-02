@@ -6,6 +6,7 @@ const SDiv = styled.div`
   text-align: center;
   font-size: 3em;
   font-weight: bold;
+  background-color: #5896df;
 `;
 
 export default function Main() {

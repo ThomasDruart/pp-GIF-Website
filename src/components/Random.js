@@ -4,6 +4,7 @@ import styled from "styled-components";
 const SDiv = styled.div`
   height: 80vh;
   text-align: center;
+  background-color: #5896df;
 `;
 
 const SH1 = styled.h1`

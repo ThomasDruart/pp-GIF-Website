@@ -5,13 +5,14 @@ import ghost from "../images/ghost.png";
 
 const SHeader = styled.div`
   height: 10vh;
-  background-color: #222b55;
+  background-color: #5896df;
   display: flex;
   justify-content: space-around;
 `;
 
 const SLogo = styled(Link)`
   display: flex;
+  text-decoration: none;
 `;
 
 const SImg = styled.img`
@@ -26,6 +27,9 @@ const SH1 = styled.h1`
   font-size: 1.3em;
   font-family: "Press Start 2P";
   margin: auto 0;
+  border: solid 2px white;
+  border-radius: 5px;
+  padding: 0.5em;
 `;
 
 const SMenu = styled.div`

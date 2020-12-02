@@ -2,9 +2,13 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import styled from "styled-components";
 
+const SGifList = styled.div`
+  background-color: #5896df;
+`;
+
 const STitle = styled.h2`
   font-size: 1.2em;
-  margin: 1em 0 1em 3em;
+  padding: 3em 0 1em 3em;
   font-family: "Press Start 2P";
 `;
 
@@ -54,9 +58,9 @@ export default function GifList() {
   //console.log(gifs);
 
   return (
-    <>
+    <SGifList>
       <STitle>Trending GIFs</STitle>
       <SDiv>{renderGif()}</SDiv>
-    </>
+    </SGifList>
   );
 }
