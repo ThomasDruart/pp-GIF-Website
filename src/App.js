@@ -4,7 +4,6 @@ import { Switch, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import GifList from "./components/GifList";
-import Random from "./components/Random";
 import Footer from "./components/Footer";
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
 
       <Switch>
         <Route path="/trending" component={GifList} />
-        <Route path="/random" component={Random} />
         <Route exact path="/" component={Main} />
       </Switch>
 

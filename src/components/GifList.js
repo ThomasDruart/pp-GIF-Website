@@ -50,7 +50,7 @@ export default function GifList() {
     return gifs.map((gif) => {
       return (
         <div>
-          <SImg src={gif.images.fixed_height.url} alt="" />
+          <SImg src={gif.images.fixed_height.url} alt="trendy gif" />
         </div>
       );
     });
