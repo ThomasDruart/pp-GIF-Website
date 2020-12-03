@@ -3,7 +3,7 @@ import axios from "axios";
 import styled from "styled-components";
 
 const SGifList = styled.div`
-  background-color: #5896df;
+  background-color: #e0e0e0;
 `;
 
 const STitle = styled.h2`

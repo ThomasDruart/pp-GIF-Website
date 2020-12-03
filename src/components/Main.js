@@ -5,7 +5,7 @@ import styled from "styled-components";
 const SDiv = styled.div`
   height: 80vh;
   text-align: center;
-  background-color: #5896df;
+  background-color: #e0e0e0;
 `;
 
 export default function Main() {
@@ -31,9 +31,9 @@ export default function Main() {
 
   return (
     <SDiv>
-      <h1>Gif Roulette for Dogs</h1>
+      <h1>Gif Roulette</h1>
+      <button onClick={fetchGif}>Another One</button>
       <img src={gif.image_original_url} alt="random gif" />
-      <button onClick={fetchGif}>Another</button>
     </SDiv>
   );
 }

@@ -5,7 +5,7 @@ import ghost from "../images/ghost.png";
 
 const SHeader = styled.div`
   height: 10vh;
-  background-color: #5896df;
+  background-color: #384b9c;
   display: flex;
   justify-content: space-around;
 `;
@@ -22,12 +22,12 @@ const SImg = styled.img`
 `;
 
 const SH1 = styled.h1`
-  color: white;
+  color: #e0e0e0;
   text-align: center;
   font-size: 1.3em;
   font-family: "Press Start 2P";
   margin: auto 0;
-  border: solid 2px white;
+  border: solid 2px #e0e0e0;
   border-radius: 5px;
   padding: 0.5em;
 `;
@@ -42,7 +42,7 @@ const SMenu = styled.div`
 const SLi = styled(Link)`
   margin: 0 1.5em;
   text-decoration: none;
-  color: white;
+  color: #e0e0e0;
 `;
 
 export default function Header() {
