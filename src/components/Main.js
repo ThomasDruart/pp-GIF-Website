@@ -11,13 +11,12 @@ const SRandom = styled.div`
   flex-direction: column;
   align-items : center;
 
-  & > h2 {
-    color : #e8e8e8;
-    margin-bottom: 2vh; 
+  & > input {
+    text-align: center;
   }
 
   & > button {
-    margin-bottom: 2vh;
+    margin: 2vh 0;
     }
   }
   & > img {
@@ -31,6 +30,7 @@ const SRandom = styled.div`
 
 export default function Main() {
   const [gif, setGif] = useState([]);
+  const [search, setSearch] = useState("Puppy");
 
   useEffect(() => {
     fetchGif();
@@ -41,7 +41,7 @@ export default function Main() {
       const { data } = await axios.get("https://api.giphy.com/v1/gifs/random", {
         params: {
           api_key: "Khl0CRBp6qvnFcYuUjNsbk9aTw45Iv8r",
-          tag: "dog",
+          tag: search,
         },
       });
       setGif(data.data);
@@ -53,8 +53,12 @@ export default function Main() {
   return (
     <SDiv>
       <SRandom>
-        <h2>Dogs</h2>
-        <button onClick={fetchGif}>Another One</button>
+        <input
+          type="text"
+          placeholder={search}
+          onChange={(e) => setSearch(e.target.value)}
+        ></input>
+        <button onClick={fetchGif}>I Feel Lucky</button>
         <img src={gif.image_original_url} alt="random gif" />
       </SRandom>
     </SDiv>
