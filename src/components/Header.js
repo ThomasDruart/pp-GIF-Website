@@ -8,6 +8,7 @@ const SHeader = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 3vh;
+  border-bottom: 2px dashed #e0e0e0;
 `;
 
 const SLogo = styled(Link)`

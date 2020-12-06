@@ -13,10 +13,28 @@ const SRandom = styled.div`
 
   & > input {
     text-align: center;
+    outline: none;
+    border-radius: 5px;
+    padding: 0.5vh 0.5vw;
+    border: 0;
   }
-
   & > button {
     margin: 2vh 0;
+    border: none;
+    outline: none;
+    padding: 1vh 1.5vw;
+    background: #22CB8A;
+    color: #fff;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 3px;
+    &:hover {
+      cursor: pointer;
+      background : #21B47C;
+    }
+   &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
     }
   }
   & > img {
@@ -24,7 +42,6 @@ const SRandom = styled.div`
     border: 0.5em solid #e8e8e8;
     border-bottom: 3em solid #e8e8e8;
     box-shadow: 1px 1px 12px #555;
-
   }
 `;
 
