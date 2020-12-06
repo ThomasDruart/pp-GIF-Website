@@ -3,9 +3,30 @@ import axios from "axios";
 import styled from "styled-components";
 
 const SDiv = styled.div`
-  height: 80vh;
   text-align: center;
-  background-color: #e0e0e0;
+`;
+
+const SRandom = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items : center;
+
+  & > h2 {
+    color : #e8e8e8;
+    margin-bottom: 2vh; 
+  }
+
+  & > button {
+    margin-bottom: 2vh;
+    }
+  }
+  & > img {
+    max-width: 90vw;
+    border: 0.5em solid #e8e8e8;
+    border-bottom: 3em solid #e8e8e8;
+    box-shadow: 1px 1px 12px #555;
+
+  }
 `;
 
 export default function Main() {
@@ -31,9 +52,11 @@ export default function Main() {
 
   return (
     <SDiv>
-      <h1>Gif Roulette</h1>
-      <button onClick={fetchGif}>Another One</button>
-      <img src={gif.image_original_url} alt="random gif" />
+      <SRandom>
+        <h2>Dogs</h2>
+        <button onClick={fetchGif}>Another One</button>
+        <img src={gif.image_original_url} alt="random gif" />
+      </SRandom>
     </SDiv>
   );
 }

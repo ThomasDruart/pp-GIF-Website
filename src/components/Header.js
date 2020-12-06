@@ -4,29 +4,33 @@ import styled from "styled-components";
 import ghost from "../images/ghost.png";
 
 const SHeader = styled.div`
-  height: 10vh;
-  background-color: #384b9c;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3vh;
 `;
 
 const SLogo = styled(Link)`
   display: flex;
   text-decoration: none;
+  margin: 0 2vw;
 `;
 
 const SImg = styled.img`
-  width: 3em;
-  height: 3em;
-  margin: auto 1em auto 0;
+  width: 3.5vw;
+  height: 5vh;
+  margin: 3vh 1vw;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const SH1 = styled.h1`
-  color: #e0e0e0;
+  color: #e8e8e8;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.6em;
   font-family: "Press Start 2P";
-  margin: auto 0;
+  margin: 2vh 0;
   border: solid 2px #e0e0e0;
   border-radius: 5px;
   padding: 0.5em;
@@ -36,13 +40,14 @@ const SMenu = styled.div`
   font-family: "Press Start 2P";
   display: flex;
   flex-direction: row;
-  margin: auto 0;
+  margin: 3vh 0;
 `;
 
 const SLi = styled(Link)`
-  margin: 0 1.5em;
+  margin: 0 2vw;
+  font-size: 1.1em;
   text-decoration: none;
-  color: #e0e0e0;
+  color: #e8e8e8;
 `;
 
 export default function Header() {
@@ -53,7 +58,7 @@ export default function Header() {
         <SH1>Oh My GIF !</SH1>
       </SLogo>
       <SMenu>
-        <SLi to="/">Main</SLi>
+        <SLi to="/">Home</SLi>
         <SLi to="/trending">Trending</SLi>
       </SMenu>
     </SHeader>
